@@ -1,11 +1,25 @@
 <div *ngIf="hero">
 
-  <h2>{{hero.name | uppercase}} Details</h2>
-  <div><span>id: </span>{{hero.id}}</div>
-  <div>
-    <label>name:
-      <input [(ngModel)]="hero.name" placeholder="name"/>
-    </label>
-  </div>
-
+  <h2>Detalles del heroe</h2>
+ <!-- <div><span>id: </span>{{hero.id}}</div>
+  <div>{{hero.name}}</div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">nombre</th>
+        <th scope="col">edad</th>
+        <th scope="col">telefono</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">{{hero.id}}</th>
+        <td>{{hero.name}}</td>
+        <td>{{hero.edad}}</td>
+        <td>{{hero.phone}}</td>
+      </tr>
+      
+    </tbody>
+  </table>
 </div>
